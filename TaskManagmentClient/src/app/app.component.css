@@ -1,0 +1,9 @@
+nav{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.app{
+    display: flex;
+    justify-content: space-between;
+}

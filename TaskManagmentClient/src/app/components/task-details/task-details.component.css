@@ -1,0 +1,18 @@
+.details {
+    display: flex;
+    height: 271px;
+    align-items: self-start;
+    padding: 69px;
+    margin-top: 60px;
+    width: 468px;
+    justify-content: space-between;
+}
+
+.seeAllTasksBtn {
+    margin-top: 100px;
+}
+.detailsContent{
+    border: 5px solid #ff735c;
+    padding: 90px;
+    margin-left: 70px;
+}

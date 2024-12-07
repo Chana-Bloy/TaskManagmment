@@ -1,21 +1,45 @@
 .mat-mdc-row {
-    height: 90px;
-  }
-  .actions{
-    display: flex;
-    justify-content: end;
-    gap:14px;
-  }
-  .header{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-  }
-  .search{
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  table{
-    margin-bottom: 50px;
-  }
-  
+  height: 90px;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  gap: 14px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 207px;
+  left: 0px;
+
+}
+
+.title {
+  position: relative;
+  top: 50px;
+}
+
+.search {
+  margin-bottom: 55px;
+  position: sticky;
+  top: 100px;
+  left: 0px;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+.scrollable-table {
+  max-height: 355px;
+  overflow-y: auto;
+}
+
+th {
+  text-decoration: underline;
+  text-decoration-color: #ff735c;
+}

@@ -1,6 +1,9 @@
-<div >
-    <div *ngIf="currentTask.id">
-      <h4>Task</h4>
+<div class="details" >
+  <button (click)="goToTaskList()" mat-fab>
+    <mat-icon>arrow_back</mat-icon>
+</button>
+    <div *ngIf="currentTask.id" class="detailsContent">
+      <h2>Task Details</h2>
       <div>
         <label><strong>Title:</strong></label> {{ currentTask.title }}
       </div>
@@ -15,6 +18,7 @@
     </div>
     
   </div>
+  
   
   
   

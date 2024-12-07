@@ -1,6 +1,11 @@
 <div class="edit-form">
-  <h4>Create a new Task</h4>
-  
+  <div *ngIf="id;else other_content">
+    <h4>Edit Task Details</h4>
+  </div>
+  <ng-template #other_content>
+    <h4>Create a new Task</h4>
+  </ng-template>
+
   <form class="example-form">
     <mat-form-field class="example-full-width">
       <mat-label>Title</mat-label>
@@ -12,10 +17,10 @@
       <textarea matInput id="description" [(ngModel)]="currentTask.description" name="description"></textarea>
     </mat-form-field>
     <section class="example-section">
-      <mat-checkbox class="example-margin"  checked="currentTask.isCompleted" name="isCompleted"
-      [(ngModel)]="currentTask.isCompleted">Is Completed</mat-checkbox>
+      <mat-checkbox class="example-margin" checked="currentTask.isCompleted" name="isCompleted"
+        [(ngModel)]="currentTask.isCompleted">Is Completed</mat-checkbox>
     </section>
   </form>
-  <button mat-raised-button color="accent" [disabled]="!currentTask.title||!currentTask.description" (click)="saveTask()">Save</button>
-  <p>{{ message }}</p>
+  <button mat-raised-button color="accent" 
+    (click)="saveTask()" [disabled]="!currentTask.title||!currentTask.description">Save</button>
 </div>
